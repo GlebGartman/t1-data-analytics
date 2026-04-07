@@ -1,4 +1,4 @@
-# Excel & Power BI Business Analytics
+# Excel & Power BI Business Analytics T1 (Холдинг)
 
 ## Описание проекта
 
