@@ -1,0 +1,9 @@
+*.csv linguist-language=CSV
+*.csv linguist-detectable=true
+
+*.md linguist-documentation
+*.xlsx linguist-detectable=false
+*.xls linguist-detectable=false
+*.sql linguist-detectable=false
+*.json linguist-detectable=false
+LICENSE linguist-detectable=false
