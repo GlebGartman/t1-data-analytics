@@ -60,37 +60,37 @@
 ## 📈 Визуализации
 
 ### 📌 Количество заявок
-![Результат](здесь будет рисунок)
+![Количество заявок](https://drive.google.com/uc?export=view&id=1E_10tQU7l3S2y0LE19jzMvyARRJFRxA_)
 
 ---
 
 ### 📌 Доля повторных заявок
-![Результат](здесь будет рисунок)
+![Повторные заявки](https://drive.google.com/uc?export=view&id=1uANP69YhJWUoAXhm_bcADvyNwBW2-qJK)
 
 ---
 
 ### 📌 Доля просроченных заявок
-![Результат](здесь будет рисунок)
+![Просроченные заявки](https://drive.google.com/uc?export=view&id=1YbBnNkTUOGd0BAEL4T3tVeBQhpvocr9c)
 
 ---
 
 ### 📌 Средняя длительность исполнения заявок
-![Результат](здесь будет рисунок)
+![Средняя длительность](https://drive.google.com/uc?export=view&id=1KxBHKcIXWu4ww6UgP8b2-x5Jg-LPzce2)
 
 ---
 
 ### 📌 Динамика количества заявок
-![Результат](здесь будет рисунок)
+![Динамика заявок](https://drive.google.com/uc?export=view&id=1HIwNlgtr2hloPZWwfShZTSvKWKikXTKD)
 
 ---
 
 ### 📌 Распределение заявок по типам сбоев
-![Результат](здесь будет рисунок)
+![Типы сбоев](https://drive.google.com/uc?export=view&id=1chnDWTAITrI3hYmjLmLR-gqWziX3NKLD)
 
 ---
 
-### 📌 Анализ по регионам
-![Результат](здесь будет рисунок)
+### 📌 Анализ заявок по регионам
+![Анализ заявок по регионам](https://drive.google.com/uc?export=view&id=1Pmb7Uodnyv5UhdEJ--3pmFfKys2GGuub)
 
 ---
 
@@ -126,7 +126,7 @@
 - с признаком наличия заявки  
 - с дополненной информацией по банкоматам и датам  
 
-![Результат](здесь будет рисунок)
+![Задача 1](https://drive.google.com/uc?export=view&id=1fqOwBC4UQ9BP47iUE5BGjCMYZmJo-nfk)
 
 ---
 
@@ -152,7 +152,7 @@
 - среднюю длительность  
 - суммарное время выполнения  
 
-![Результат](здесь будет рисунок)
+![Задача 2](https://drive.google.com/uc?export=view&id=1evKbyqGBb5-gFHjMIKHJOXNs_WvWYLiJ)
 
 ---
 
@@ -175,7 +175,7 @@
 - зелёный — высокий уровень доступности  
 - красный — критические значения  
 
-![Результат](здесь будет рисунок)
+![Задача 3](https://drive.google.com/uc?export=view&id=1Rmi4Ly5uMGnI6PKL1N699xBX7J6CIRut)
 
 ---
 
@@ -194,7 +194,7 @@
 
 Получено средневзвешенное значение доступности по всем филиалам:**95,2%**
 
-![Результат](здесь будет рисунок)
+![Задача 4](https://drive.google.com/uc?export=view&id=14GVLvAI9h_Gw7bF7BOdgKcaZnqHNPVUK)
 
 ---
 
@@ -233,7 +233,7 @@
 - выявить пики и просадки  
 - провести дальнейший анализ причин  
 
-![Результат](здесь будет рисунок)
+![Задача 5](https://drive.google.com/uc?export=view&id=1G1nwDB1i0BQ_HyQby1Psz6iC-eq00_v3)
 
 ---
 
@@ -340,8 +340,8 @@
     Range("I14").Select
 End Sub
 ```
-' Здесь будет код макроса
-![Результат](здесь будет рисунок)
+
+![Задача 6](https://drive.google.com/uc?export=view&id=1mIo_8ruHmvgAmJraAZMm7MCaYRWEzf9R)
 
 ---
 
@@ -368,6 +368,10 @@ End Sub
 - сравнивать показатели по регионам и типам устройств  
 - выявлять отклонения и тренды  
 
-![Результат](здесь будет рисунок)
+![Задача 7_1](https://drive.google.com/uc?export=view&id=1DgwrRVfc5JxGX8bZc-s8Sjg0Z94TA2Tc)
+
+---
+
+![Задача 7_2](https://drive.google.com/uc?export=view&id=1Mj1yc07rUwItdS0nn37ry9Hnusqmmej6)
 
 ---
