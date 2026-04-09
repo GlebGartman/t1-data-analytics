@@ -254,7 +254,92 @@
 
 Макрос реализован на языке VBA и запускается по нажатию кнопки на листе.
 
-```vba```
+```vba
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    Columns("V:AB").Select
+    ActiveWorkbook.PivotCaches.Create(SourceType:=xlDatabase, SourceData:= _
+        "Таблица36", Version:=7).CreatePivotTable TableDestination:="6!R12C3:R17C6" _
+        , TableName:="Сводная таблица10", DefaultVersion:=7
+    Sheets("6").Select
+    Cells(12, 3).Select
+    With ActiveSheet.PivotTables("Сводная таблица10")
+        .ColumnGrand = True
+        .HasAutoFormat = True
+        .DisplayErrorString = False
+        .DisplayNullString = True
+        .EnableDrilldown = True
+        .ErrorString = ""
+        .MergeLabels = False
+        .NullString = ""
+        .PageFieldOrder = 2
+        .PageFieldWrapCount = 0
+        .PreserveFormatting = True
+        .RowGrand = True
+        .SaveData = True
+        .PrintTitles = False
+        .RepeatItemsOnEachPrintedPage = True
+        .TotalsAnnotation = False
+        .CompactRowIndent = 1
+        .InGridDropZones = False
+        .DisplayFieldCaptions = True
+        .DisplayMemberPropertyTooltips = False
+        .DisplayContextTooltips = True
+        .ShowDrillIndicators = True
+        .PrintDrillIndicators = False
+        .AllowMultipleFilters = False
+        .SortUsingCustomLists = True
+        .FieldListSortAscending = False
+        .ShowValuesRow = False
+        .CalculatedMembersInFilters = False
+        .RowAxisLayout xlCompactRow
+    End With
+    With ActiveSheet.PivotTables("Сводная таблица10").PivotCache
+        .RefreshOnFileOpen = False
+        .MissingItemsLimit = xlMissingItemsDefault
+    End With
+    ActiveSheet.PivotTables("Сводная таблица10").RepeatAllLabels xlRepeatLabels
+    With ActiveSheet.PivotTables("Сводная таблица10").PivotFields("РОО")
+        .Orientation = xlRowField
+        .Position = 1
+    End With
+    Range("C12").Select
+    ActiveSheet.PivotTables("Сводная таблица10").CompactLayoutRowHeader = "РОО"
+    Range("C13").Select
+    ActiveSheet.PivotTables("Сводная таблица10").AddDataField ActiveSheet. _
+        PivotTables("Сводная таблица10").PivotFields("Получатель"), _
+        "Количество по полю Получатель", xlCount
+    Range("D12").Select
+    ActiveSheet.PivotTables("Сводная таблица10").PivotFields( _
+        "Количество по полю Получатель").Caption = "Количество заявок"
+    ActiveSheet.PivotTables("Сводная таблица10").AddDataField ActiveSheet. _
+        PivotTables("Сводная таблица10").PivotFields("Длительность (часы)"), _
+        "Количество по полю Длительность (часы)", xlCount
+    Range("E12").Select
+    With ActiveSheet.PivotTables("Сводная таблица10").PivotFields( _
+        "Количество по полю Длительность (часы)")
+        .Caption = "Средняя длительность в часах"
+        .Function = xlAverage
+    End With
+    ActiveSheet.PivotTables("Сводная таблица10").AddDataField ActiveSheet. _
+        PivotTables("Сводная таблица10").PivotFields("Длительность (часы)"), _
+        "Количество по полю Длительность (часы)", xlCount
+    Range("F12").Select
+    With ActiveSheet.PivotTables("Сводная таблица10").PivotFields( _
+        "Количество по полю Длительность (часы)")
+        .Caption = "Общий фонд времени по заявкам в часах"
+        .Function = xlSum
+    End With
+    With ActiveSheet.PivotTables("Сводная таблица10").PivotFields("РОО")
+        .PivotItems("(blank)").Visible = False
+    End With
+    Range("I14").Select
+End Sub
+```
 ' Здесь будет код макроса
 ![Результат](здесь будет рисунок)
 
